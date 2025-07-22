@@ -2,10 +2,12 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --color1: #6da5c0;
-  --color2: #294d61;
-  --color3: #0f909c;
-  --color4: #072e33;
+  --color1: #4c4f56; /*contenido*/
+  --color2: #a4e4d1;
+  --color3: #a4c6e1; /*fondo*/
+  --color4: #ffd36b;
+  --color5: #e28d57;
+  --color6: #d8c9a3;
   color-scheme: light dark;
   background-color: var(--color3);
 
