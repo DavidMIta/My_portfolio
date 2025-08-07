@@ -42,26 +42,32 @@
 
 @media (max-width: 577px) {
   .skills {
-    width: 50%;
-    justify-content: center;
-  }
-}
-/* Responsive específico */
-@media (max-width: 480px) {
-  .skills {
-    width: 50%;
-    justify-content: center;
-  }
-  .skills h2 {
-    font-size: 1.5rem;
+    width: 200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
   }
 
   .skills-inline {
+    justify-items: center;
     gap: 1.2rem;
   }
 
   .skill-inline img {
     width: 32px;
     height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    margin: 0 auto;
+  }
+
+  .skills h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-inline {
+    gap: 1.2rem;
   }
 }
