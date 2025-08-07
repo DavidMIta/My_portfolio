@@ -1,71 +1,57 @@
 .skills {
+  background-color: var(--color2);
   padding: 2rem;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 25px;
   color: var(--color1);
 }
 
-.skills h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+/* GRID centrado y responsivo */
+.skills-inline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-items: center; /* 👈 Centra cada ítem en su celda */
 }
 
-.skills-container {
+/* Cada habilidad individual */
+.skill-inline {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centra todos los elementos en la fila */
-  gap: 1.5rem;
-  padding: 0 1rem;
+  flex-direction: column; /* Coloca ícono arriba, texto abajo */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto */
+  gap: 8px;
 }
 
-.skill-card {
-  flex: 1 1 180px; /* mínimo 180px, crece hasta que haya espacio */
-  max-width: 250px; /* Reducción en el tamaño máximo */
-  background-color: var(--color2);
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 8px var(--color1);
+/* Imagen del logo */
+.skill-inline img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Texto de la habilidad */
+.skill-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center; /* Centrado horizontal */
+  font-size: 1rem;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px var(--color3);
-}
-
-.skill-card img {
-  width: 50px; /* Reducir el tamaño de la imagen */
-  height: 50px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-  font-size: 1.2rem; /* Fuente ligeramente más pequeña */
-  margin: 0.5rem 0;
-  color: var(--color1);
-}
-
-.skill-card p {
-  font-size: 0.9rem; /* Reducir el tamaño del texto */
-  text-align: center;
-}
-
-/* Responsive: mejora para pantallas pequeñas */
+/* Responsive específico */
 @media (max-width: 480px) {
   .skills h2 {
     font-size: 1.5rem;
   }
 
-  .skill-card h3 {
-    font-size: 1.1rem;
+  .skills-inline {
+    gap: 1.2rem;
   }
 
-  .skill-card p {
-    font-size: 0.85rem;
+  .skill-inline img {
+    width: 32px;
+    height: 32px;
   }
 }

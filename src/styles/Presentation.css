@@ -18,9 +18,9 @@
 }
 
 .presentation img {
-  width: clamp(250px, 40vw, 150px);
+  width: clamp(150px, 40vw, 150px);
   height: auto;
-  border-radius: 12px;
+  border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 

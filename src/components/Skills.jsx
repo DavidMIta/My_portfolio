@@ -1,54 +1,40 @@
 import React from "react";
-import { useState } from "react";
 import "../styles/Skills.css";
 import logohtml from "../assets/html5.svg";
 import logocss from "../assets/css.svg";
 import logoreact from "../assets/react.svg";
 import logojavascript from "../assets/js.svg";
 import logonode from "../assets/node.svg";
+import logoenglish from "../assets/english.svg";
+import logoitalian from "../assets/italian.svg";
+import logopython from "../assets/python.svg";
 
 const SkillsList = () => {
-  const skills = {
-    html: {
-      name: "HTML5",
-      image: logohtml, // Aquí usa la ruta real de las imágenes
-      description: "Estructura semántica de páginas web usando HTML.",
-    },
-    css: {
-      name: "CSS3",
-      image: logocss,
-      description: "Estilizado moderno con flexbox, grid y media queries.",
-    },
-    javascript: {
-      name: "JavaScript",
-      image: logojavascript,
-      description: "Interactividad y lógica de comportamiento web.",
-    },
-    react: {
-      name: "React",
-      image: logoreact,
-      description:
-        "Interfaces modernas y dinámicas con componentes reutilizables.",
-    },
-    node: {
-      name: "Node.js",
-      image: logonode,
-      description: "Back-end escalable con JavaScript del lado del servidor.",
-    },
-  };
+  const skills = [
+    { name: "HTML5", image: logohtml, level: "Intermedio" },
+    { name: "CSS3", image: logocss, level: "Intermedio" },
+    { name: "JavaScript", image: logojavascript, level: "Intermedio" },
+    { name: "React", image: logoreact, level: "Intermedio" },
+    { name: "Node.js", image: logonode, level: "Intermedio" },
+    { name: "Inglés", image: logoenglish, level: "Intermedio-Avanzado" },
+    { name: "Italiano", image: logoitalian, level: "Avanzado" },
+    { name: "python", image: logopython, level: "Básico" },
+  ];
+
   return (
-    <section className="skills">
-      <h2>Habilidades y Tecnologías</h2>
-      <div className="skills-container">
-        {Object.entries(skills).map(([key, skill]) => (
-          <div className="skill-card" key={key}>
+    <div className="skills">
+      <div className="skills-inline">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-inline">
             <img src={skill.image} alt={skill.name} />
-            <h3>{skill.name}</h3>
-            <p>{skill.description}</p>
+            <div className="skill-text">
+              <strong>{skill.name}</strong>
+              <span>{skill.level}</span>
+            </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

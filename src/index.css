@@ -3,9 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
   --color1: #4c4f56; /*contenido*/
-  --color2: #a4e4d1;
-  --color3: #a4c6e1; /*fondo*/
-  --color4: #ffd36b;
+  --color2: #4397cfff;
+  --color3: #163f99ff; /*fondo*/
+  --color4: #e8e4ff;
   --color5: #e28d57;
   --color6: #d8c9a3;
   color-scheme: light dark;
