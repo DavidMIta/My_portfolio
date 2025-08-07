@@ -40,8 +40,16 @@
   font-size: 1rem;
 }
 
+@media (max-width: 577px) {
+  .skills {
+    width: 50%;
+  }
+}
 /* Responsive específico */
 @media (max-width: 480px) {
+  .skills {
+    width: 50%;
+  }
   .skills h2 {
     font-size: 1.5rem;
   }
