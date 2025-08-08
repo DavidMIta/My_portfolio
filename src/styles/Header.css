@@ -73,7 +73,6 @@
   cursor: pointer;
 }
 
-/* Responsive: pantallas pequeñas */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;

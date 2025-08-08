@@ -15,7 +15,6 @@ const SkillsList = () => {
     { name: "CSS3", image: logocss, level: "Intermedio" },
     { name: "JavaScript", image: logojavascript, level: "Intermedio" },
     { name: "React", image: logoreact, level: "Intermedio" },
-    { name: "Node.js", image: logonode, level: "Intermedio" },
     { name: "Inglés", image: logoenglish, level: "Intermedio-Avanzado" },
     { name: "Italiano", image: logoitalian, level: "Avanzado" },
     { name: "python", image: logopython, level: "Básico" },
