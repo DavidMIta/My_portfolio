@@ -1,25 +1,12 @@
 .header {
   background-color: var(--color2);
-  color: var(--color1);
+  color: var(--color4);
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 20px;
-}
-.header-logo {
-  display: flex;
-  width: 80px;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.header-logo img {
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .title {
@@ -69,7 +56,7 @@
   font-size: 2rem;
   background: none;
   border: none;
-  color: var(--color1);
+  color: var(--color4);
   cursor: pointer;
 }
 
