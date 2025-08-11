@@ -15,15 +15,16 @@
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra todos los elementos en la fila */
+  justify-content: center;
   gap: 1.5rem;
   padding: 0 1rem;
 }
 
 .project-card {
-  flex: 1 1 220px; /* mínimo 220px, crece hasta que haya espacio */
+  flex: 1 1 220px;
   max-width: 300px;
   background-color: var(--color2);
+  opacity: 0.9;
   border-radius: 12px;
   padding: 1.2rem;
   box-shadow: 0 4px 10px var(--color1);
@@ -66,7 +67,6 @@ button {
   transition: background-color 0.3s ease;
 }
 
-/* Responsive: mejora para pantallas pequeñas */
 @media (max-width: 480px) {
   .projects h2 {
     font-size: 1.5rem;
