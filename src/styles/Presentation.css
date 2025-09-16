@@ -1,4 +1,5 @@
 .presentation {
+  width: 60%;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 2rem;

@@ -1,19 +1,12 @@
 :root {
+  margin: 0;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  --color1: #4c4f56;
-  --color2: #4397cfff;
-  --color3: #163f99ff;
-  --color4: #e8e4ff;
-  --color5: #e28d57;
-  --color6: #d8c9a3;
-  color-scheme: light dark;
-  background-image: url(../src/assets/floating-cogs.svg);
-  background-color: var(--color3);
+  --color1: #05161a;
+  --color2: #0c7078;
+  --color3: #6da5c0;
+  --color4: #05161a;
+  --color5: #072e33;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+  background-color: var(--color3);
 }

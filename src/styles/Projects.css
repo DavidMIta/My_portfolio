@@ -58,8 +58,8 @@
   text-align: center;
 }
 button {
-  background-color: var(--color3);
-  color: var(--color4);
+  background-color: var(--color5);
+  color: var(--color3);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 25px;

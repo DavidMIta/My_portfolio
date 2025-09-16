@@ -26,10 +26,8 @@ const SkillsList = () => {
         {skills.map((skill, index) => (
           <div key={index} className="skill-inline">
             <img src={skill.image} alt={skill.name} />
-            <div className="skill-text">
-              <strong>{skill.name}</strong>
-              <span>{skill.level}</span>
-            </div>
+            <strong>{skill.name}</strong>
+            <span>{skill.level}</span>
           </div>
         ))}
       </div>

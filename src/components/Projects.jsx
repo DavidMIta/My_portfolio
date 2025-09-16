@@ -10,7 +10,8 @@ const projects = {
   html: {
     name: "HTML5",
     image: logohtml,
-    description: "Rediseño de pagina de municipio de arbieto.",
+    description:
+      "Rediseño de pagina de municipio de arbieto con mejoras en interfaz y navegacion.",
     link: "https://eddyntr.github.io/Pagina-municipio/index.html",
   },
   javascript: {
