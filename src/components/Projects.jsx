@@ -27,6 +27,12 @@ const projects = {
       "Interfaces modernas y dinámicas con componentes reutilizables.",
     link: "https://github.com/DavidMIta/My_portfolio",
   },
+  react_django: {
+    name: "Paw-saas",
+    image: logopython,
+    description: "Aplicacion web para gestion de clinica veterinaria.",
+    link: "https://github.com/DavidMIta/paw_saas",
+  },
 };
 
 const Projects = () => {

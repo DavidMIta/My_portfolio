@@ -8,6 +8,8 @@ import logonode from "../assets/node.svg";
 import logoenglish from "../assets/english.svg";
 import logoitalian from "../assets/italian.svg";
 import logopython from "../assets/python.svg";
+import logoSQL from "../assets/SQL.svg";
+import logolinux from "../assets/linux.svg";
 
 const SkillsList = () => {
   const skills = [
@@ -17,7 +19,10 @@ const SkillsList = () => {
     { name: "React", image: logoreact, level: "Intermedio" },
     { name: "Inglés", image: logoenglish, level: "Intermedio-Avanzado" },
     { name: "Italiano", image: logoitalian, level: "Avanzado" },
-    { name: "python", image: logopython, level: "Básico" },
+    { name: "Python", image: logopython, level: "Avanzado" },
+    { name: "Django", image: logopython, level: "Intermedio" },
+    { name: "SQL", image: logoSQL, level: "Intermedio" },
+    { name: "Linux", image: logolinux, level: "Intermedio" },
   ];
 
   return (
